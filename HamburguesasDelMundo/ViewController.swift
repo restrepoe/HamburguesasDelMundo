@@ -15,9 +15,13 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var nombreHamburguesa: UILabel!
     
+    @IBOutlet weak var damePrecio: UILabel!
+    
+    
     let colores = Colores()
     let pais = ColeccionDePaises()
     let hamburguesa = ColeccionDeHamburguesas()
+    let precio = DiferentePrecio()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +40,7 @@ class ViewController: UIViewController {
         
         nombrePais.text = pais.obtenPais()
         nombreHamburguesa.text = hamburguesa.obtenHamburguesa()
+        damePrecio.text = precio.obtenPrecio()
     }
 
 }

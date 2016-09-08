@@ -38,6 +38,12 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Precio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8U-Km-bSF">
+                                <rect key="frame" x="131" y="414" width="58" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.31372549020000001" green="0.6705882353" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.31372549020000001" green="0.6705882353" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -46,15 +52,19 @@
                             <constraint firstItem="iPT-vv-7iv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="5hS-kq-tWw"/>
                             <constraint firstItem="ybA-vE-59h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="123" id="9Jm-SP-FBE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="iPT-vv-7iv" secondAttribute="trailing" constant="39" id="Mc9-IN-2yF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="x8U-Km-bSF" secondAttribute="trailing" constant="115" id="MjO-4x-ggb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uSP-u5-Bvj" secondAttribute="trailing" constant="83.5" id="evj-Nx-Z5H"/>
                             <constraint firstItem="iPT-vv-7iv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="fNa-Pc-2A2"/>
                             <constraint firstItem="ybA-vE-59h" firstAttribute="top" secondItem="iPT-vv-7iv" secondAttribute="bottom" constant="85" id="gNU-Lb-JF6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="x8U-Km-bSF" secondAttribute="bottom" constant="133" id="gea-g4-Eav"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uSP-u5-Bvj" secondAttribute="bottom" constant="274" id="mN6-Zm-f4T"/>
                             <constraint firstItem="uSP-u5-Bvj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nLC-uS-V5W"/>
+                            <constraint firstItem="x8U-Km-bSF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="115" id="sDa-pc-vfi"/>
                             <constraint firstItem="uSP-u5-Bvj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="85" id="wXP-hb-zR1"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="damePrecio" destination="x8U-Km-bSF" id="rXK-bO-q5Y"/>
                         <outlet property="nombreHamburguesa" destination="uSP-u5-Bvj" id="eFm-xt-UPv"/>
                         <outlet property="nombrePais" destination="ybA-vE-59h" id="OYY-gM-dmI"/>
                     </connections>

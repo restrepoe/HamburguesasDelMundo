@@ -27,6 +27,16 @@ class ColeccionDeHamburguesas{
     }
 }
 
+class DiferentePrecio{
+    var precios : [String] = ["$5.0", "$20", "$10", "$35", "$40", "$32.50", "$13", "$10.50", "$42", "$23.70", "$60.50", "$7.50", "$21", "$3.50", "$15", "$26.30", "3.70", "$18", "$37.80", "$70"]
+    
+    func obtenPrecio() -> String{
+        let posicion = Int (arc4random()) % precios.count
+        return precios[posicion]
+    }
+}
+
+
 struct Colores {
     let colores = [ UIColor(red:210/255.0, green: 90/255.0, blue: 45/255.0, alpha: 1),
                     UIColor(red:40/255.0, green: 170/255.0, blue: 45/255.0, alpha: 1),
